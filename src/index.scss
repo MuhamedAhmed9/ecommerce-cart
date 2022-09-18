@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #fff100;
+  --secondary-color: #542e90;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --bg-muted: #3c3c3b;
+}
+.bg-primary-color {
+  background-color: var(--primary-color);
+  &:hover {
+    background-color: var(--primary-color) !important;
+  }
+}
+
+.bg-muted {
+  background-color: var(--bg-muted);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  &:hover {
+    background-color: var(--secondary-color) !important;
+    color: var(--white-color) !important;
+  }
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+@mixin list-style($color) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: $color;
+}
+.categories {
+  ul {
+    @include list-style(var(--black-color));
+  }
+}
+.route-section span.current-route a {
+  color: var(--black-color);
+}
+
+.display-product {
+  ul li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.muted-circle {
+  background-color: #cecccc;
+  padding: 20px;
+  display: inline-block;
+}
+.products::-webkit-scrollbar {
+  height: 0.5rem;
+}
+.products::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+.cart-container {
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000069;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-cart {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+//right to left slider key frames
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.sidebar {
+  animation: slideInRight 0.5s ease-in-out;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+
+.cart-badge {
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  right: -5px;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.removeItem {
+  cursor: pointer;
+}
