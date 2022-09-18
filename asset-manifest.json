@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ecommerce-cart/static/css/main.2a29ea09.css",
+    "main.js": "/ecommerce-cart/static/js/main.8fe5e554.js",
+    "static/js/787.ee6b801e.chunk.js": "/ecommerce-cart/static/js/787.ee6b801e.chunk.js",
+    "static/media/fa-solid-900.ttf": "/ecommerce-cart/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
+    "static/media/fa-brands-400.ttf": "/ecommerce-cart/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
+    "static/media/fa-solid-900.woff2": "/ecommerce-cart/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
+    "static/media/fa-brands-400.woff2": "/ecommerce-cart/static/media/fa-brands-400.e1a247a5ef41e1975742.woff2",
+    "static/media/fa-regular-400.ttf": "/ecommerce-cart/static/media/fa-regular-400.abf801b7acb6705a15ad.ttf",
+    "static/media/fa-regular-400.woff2": "/ecommerce-cart/static/media/fa-regular-400.639d2000c1ece92eaec8.woff2",
+    "static/media/adidas.png": "/ecommerce-cart/static/media/adidas.8d52612fc9c07ed755ee.png",
+    "static/media/fa-v4compatibility.ttf": "/ecommerce-cart/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
+    "static/media/fa-v4compatibility.woff2": "/ecommerce-cart/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
+    "index.html": "/ecommerce-cart/index.html",
+    "main.2a29ea09.css.map": "/ecommerce-cart/static/css/main.2a29ea09.css.map",
+    "main.8fe5e554.js.map": "/ecommerce-cart/static/js/main.8fe5e554.js.map",
+    "787.ee6b801e.chunk.js.map": "/ecommerce-cart/static/js/787.ee6b801e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a29ea09.css",
+    "static/js/main.8fe5e554.js"
+  ]
+}
