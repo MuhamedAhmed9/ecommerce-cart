@@ -1,13 +1,21 @@
 import "./App.css";
-import React, { Component } from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import SecondNav from "./Components/SecondNav/SecondNav";
-import CategoriesBar from "./Components/CategoriesBar/CategoriesBar";
-import DisplayProduct from "./Components/DisplayProduct/DisplayProduct";
-import SimilarProducts from "./Components/SimilarProducts/SimilarProducts";
-import Footer from "./Components/Footer/Footer";
-import RouteSection from "./Components/RouteSection/RouteSection";
-import Cart from "./Components/Cart/Cart";
+import React, { Component, lazy, Suspense } from "react";
+const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
+const SecondNav = lazy(() => import("./Components/SecondNav/SecondNav"));
+const CategoriesBar = lazy(() =>
+  import("./Components/CategoriesBar/CategoriesBar")
+);
+const DisplayProduct = lazy(() =>
+  import("./Components/DisplayProduct/DisplayProduct")
+);
+const SimilarProducts = lazy(() =>
+  import("./Components/SimilarProducts/SimilarProducts")
+);
+const Footer = lazy(() => import("./Components/Footer/Footer"));
+const RouteSection = lazy(() =>
+  import("./Components/RouteSection/RouteSection")
+);
+const Cart = lazy(() => import("./Components/Cart/Cart"));
 
 class App extends Component {
   state = {
@@ -64,7 +72,7 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <Suspense fallback={<div>Loading.......</div>}>
         <Navbar />
         <SecondNav
           productsNum={this.state.cartProductsNum}
@@ -85,7 +93,7 @@ class App extends Component {
             changeStatus={this.changeStatus}
           />
         )}
-      </>
+      </Suspense>
     );
   }
 }
